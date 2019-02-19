@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/test_clion.dir/main.c.o  -o test_clion 
