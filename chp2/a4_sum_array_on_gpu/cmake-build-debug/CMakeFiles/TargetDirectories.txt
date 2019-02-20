@@ -1,0 +1,3 @@
+/media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp2/a4_sum_array_on_gpu/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp2/a4_sum_array_on_gpu/cmake-build-debug/CMakeFiles/a4_sum_array_on_gpu.dir
+/media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp2/a4_sum_array_on_gpu/cmake-build-debug/CMakeFiles/edit_cache.dir
