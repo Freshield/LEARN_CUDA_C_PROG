@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/a1_sum_array.dir/a1_sum_array_generated_main.cu.o  -o a1_sum_array /usr/local/cuda-9.0/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 

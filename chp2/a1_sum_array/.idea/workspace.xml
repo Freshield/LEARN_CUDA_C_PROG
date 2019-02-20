@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="chp1_test" targetName="chp1_test" />
+      <config projectName="a1_sum_array" targetName="a1_sum_array" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,7 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b08b4a3f-1074-440d-94ca-d03c50705747" name="Default Changelist" comment="" />
+    <list default="true" id="420c753c-94fa-4043-9dcb-ee9c8655f740" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../chp1/chp1_test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chp1/chp1_test/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,20 +24,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            <state relative-caret-position="66">
+              <caret line="3" lean-forward="true" selection-end-line="22" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="-2">
+              <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,18 +72,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="chp1_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chp1_test" type="462c0819:PsiDirectoryNode" />
+              <item name="a1_sum_array" type="b2602c69:ProjectViewProjectNode" />
+              <item name="a1_sum_array" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -99,7 +104,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="chp1_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="chp1_test" TARGET_NAME="chp1_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="chp1_test" RUN_TARGET_NAME="chp1_test">
+    <configuration name="a1_sum_array" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="a1_sum_array" TARGET_NAME="a1_sum_array" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="a1_sum_array" RUN_TARGET_NAME="a1_sum_array">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -110,23 +115,24 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b08b4a3f-1074-440d-94ca-d03c50705747" name="Default Changelist" comment="" />
-      <created>1550651638327</created>
+      <changelist id="420c753c-94fa-4043-9dcb-ee9c8655f740" name="Default Changelist" comment="" />
+      <created>1550652085576</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1550651638327</updated>
-      <workItem from="1550651639643" duration="446000" />
+      <updated>1550652085576</updated>
+      <workItem from="1550652086680" duration="2690000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446000" />
+    <option name="totallyTimeSpent" value="2690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="518" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2498621" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" weight="0.32952183" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -151,17 +157,20 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/main.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="-2">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cu">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="66">
+          <caret line="3" lean-forward="true" selection-end-line="22" selection-end-column="39" />
         </state>
       </provider>
     </entry>
