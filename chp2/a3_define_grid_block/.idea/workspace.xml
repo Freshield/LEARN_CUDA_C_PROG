@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="a2_check_index" targetName="a2_check_index" />
+      <config projectName="a3_define_grid_block" targetName="a3_define_grid_block" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,7 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ddcfa85-155e-427c-9245-82c557c8063d" name="Default Changelist" comment="" />
+    <list default="true" id="76e8ad22-3c71-4b36-8b3f-f71a453089ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../a2_check_index/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a2_check_index/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,20 +24,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="11" lean-forward="true" selection-end-line="22" selection-end-column="39" />
+            <state relative-caret-position="440">
+              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="438">
+              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -72,8 +74,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="a2_check_index" type="b2602c69:ProjectViewProjectNode" />
-              <item name="a2_check_index" type="462c0819:PsiDirectoryNode" />
+              <item name="a3_define_grid_block" type="b2602c69:ProjectViewProjectNode" />
+              <item name="a3_define_grid_block" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -100,7 +102,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="a2_check_index" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="a2_check_index" TARGET_NAME="a2_check_index" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="a2_check_index" RUN_TARGET_NAME="a2_check_index">
+    <configuration name="a3_define_grid_block" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="a3_define_grid_block" TARGET_NAME="a3_define_grid_block" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="a3_define_grid_block" RUN_TARGET_NAME="a3_define_grid_block">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -111,17 +113,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0ddcfa85-155e-427c-9245-82c557c8063d" name="Default Changelist" comment="" />
-      <created>1550655407730</created>
+      <changelist id="76e8ad22-3c71-4b36-8b3f-f71a453089ba" name="Default Changelist" comment="" />
+      <created>1550656164130</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1550655407730</updated>
-      <workItem from="1550655408856" duration="756000" />
+      <updated>1550656164130</updated>
+      <workItem from="1550656165214" duration="354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="756000" />
+    <option name="totallyTimeSpent" value="354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="518" width="1855" height="1084" extended-state="6" />
@@ -138,7 +140,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32952183" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -153,20 +155,20 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.cu">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="440">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/main.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="11" lean-forward="true" selection-end-line="22" selection-end-column="39" />
+        <state relative-caret-position="438">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
