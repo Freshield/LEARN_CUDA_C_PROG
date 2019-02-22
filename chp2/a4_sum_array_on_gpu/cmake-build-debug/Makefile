@@ -123,33 +123,6 @@ a4_sum_array_on_gpu/fast:
 	$(MAKE) -f CMakeFiles/a4_sum_array_on_gpu.dir/build.make CMakeFiles/a4_sum_array_on_gpu.dir/build
 .PHONY : a4_sum_array_on_gpu/fast
 
-main.o: main.c.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/a4_sum_array_on_gpu.dir/build.make CMakeFiles/a4_sum_array_on_gpu.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/a4_sum_array_on_gpu.dir/build.make CMakeFiles/a4_sum_array_on_gpu.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/a4_sum_array_on_gpu.dir/build.make CMakeFiles/a4_sum_array_on_gpu.dir/main.c.s
-.PHONY : main.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +132,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... a4_sum_array_on_gpu"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 
