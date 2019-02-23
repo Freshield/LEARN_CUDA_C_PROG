@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/a5_review_sum_array_on_gpu.dir/a5_review_sum_array_on_gpu_generated_main.cu.o  -o a5_review_sum_array_on_gpu /usr/local/cuda-9.0/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 
