@@ -1,6 +1,6 @@
 #include <cuda_runtime.h>
 #include <stdio.h>
-#include <curand_mtgp32_kernel.h>
+#include <sys/time.h>
 
 #define CHECK(call)\
 {\
@@ -11,6 +11,12 @@
         exit(1);\
     }\
 }\
+
+double cpuSecond(){
+    struct timeval tp;
+    gettimeofday(&tp, NULL);
+    return ((double)tp.tv_sec + (double)tp.tv_usec*1e-6);
+}
 
 void checkResult(float *hostRef, float *gpuRef, const int N){
     double epsilon = 1.0E-8;
@@ -43,9 +49,10 @@ void sumArraysOnHost(float *A, float *B, float *C, const int N){
     }
 }
 
-__global__ void sumArraysOnGPU(float *A, float *B, float *C){
-    int i = threadIdx.x;
-    C[i] = A[i] + B[i];
+__global__ void sumArraysOnGPU(float *A, float *B, float *C, const int N){
+    int i = blockIdx.x * blockDim.x + threadIdx.x;
+//    printf("num %d, blockIdx %d, blockDim %d, threadIdx %d\n",i,blockIdx.x,blockDim.x,threadIdx.x);
+    if (i < N) C[i] = A[i] + B[i];
 }
 
 int main(int argc, char **argv){
@@ -54,7 +61,7 @@ int main(int argc, char **argv){
     int dev = 0;
     cudaSetDevice(dev);
 
-    int nElem = 32;
+    int nElem = 1<<24;
     printf("Vector size %d\n", nElem);
 
     size_t nBytes = nElem * sizeof(float);
@@ -65,8 +72,13 @@ int main(int argc, char **argv){
     hostRef = (float *)malloc(nBytes);
     gpuRef = (float *)malloc(nBytes);
 
+    double iStart, iElaps;
+
+    iStart = cpuSecond();
     initData(h_A, nElem);
     initData(h_B, nElem);
+    iElaps = cpuSecond() - iStart;
+    printf("initData Time: %f\n",iElaps);
 
     memset(hostRef, 0, nBytes);
     memset(gpuRef, 0, nBytes);
@@ -79,15 +91,22 @@ int main(int argc, char **argv){
     cudaMemcpy(d_A, h_A, nBytes, cudaMemcpyHostToDevice);
     cudaMemcpy(d_B, h_B, nBytes, cudaMemcpyHostToDevice);
 
-    dim3 block (nElem);
-    dim3 grid (nElem/block.x);
+    int iLen = 1024;
+    dim3 block (iLen);
+    dim3 grid ((nElem+block.x-1)/block.x);
 
-    sumArraysOnGPU<<<grid, block>>>(d_A, d_B, d_C);
-    printf("Execution configuration <<<%d, %d>>>\n", grid.x, block.x);
+    iStart = cpuSecond();
+    sumArraysOnGPU<<<grid, block>>>(d_A, d_B, d_C, nElem);
+    cudaDeviceSynchronize();
+    iElaps = cpuSecond() - iStart;
+    printf("Execution configuration <<<%d, %d>>>, Time elapsed %f\n", grid.x, block.x, iElaps);
 
     cudaMemcpy(gpuRef, d_C, nBytes, cudaMemcpyDeviceToHost);
 
+    iStart = cpuSecond();
     sumArraysOnHost(h_A, h_B, hostRef, nElem);
+    iElaps = cpuSecond() - iStart;
+    printf("cpu use time: %f\n",iElaps);
 
     checkResult(hostRef, gpuRef, nElem);
 

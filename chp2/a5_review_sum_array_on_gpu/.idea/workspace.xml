@@ -12,9 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03461c5b-f890-4791-ad84-6fb4740f43e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../a4_sum_array_on_gpu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a4_sum_array_on_gpu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a4_sum_array_on_gpu/cmake-build-debug/CMakeFiles/a4_sum_array_on_gpu.dir/a4_sum_array_on_gpu_generated_main.cu.o" beforeDir="false" afterPath="$PROJECT_DIR$/../a4_sum_array_on_gpu/cmake-build-debug/CMakeFiles/a4_sum_array_on_gpu.dir/a4_sum_array_on_gpu_generated_main.cu.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a4_sum_array_on_gpu/cmake-build-debug/a4_sum_array_on_gpu" beforeDir="false" afterPath="$PROJECT_DIR$/../a4_sum_array_on_gpu/cmake-build-debug/a4_sum_array_on_gpu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/a5_review_sum_array_on_gpu.dir/a5_review_sum_array_on_gpu_generated_main.cu.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/a5_review_sum_array_on_gpu.dir/a5_review_sum_array_on_gpu_generated_main.cu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/a5_review_sum_array_on_gpu.dir/a5_review_sum_array_on_gpu_generated_main.cu.o.depend" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/a5_review_sum_array_on_gpu.dir/a5_review_sum_array_on_gpu_generated_main.cu.o.depend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/a5_review_sum_array_on_gpu" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/a5_review_sum_array_on_gpu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cu" beforeDir="false" afterPath="$PROJECT_DIR$/main.cu" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+            <state relative-caret-position="372">
+              <caret line="93" column="19" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="19" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -123,19 +125,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550905737925</updated>
-      <workItem from="1550905739182" duration="1813000" />
+      <workItem from="1550905739182" duration="3424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1813000" />
+    <option name="totallyTimeSpent" value="3424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="511" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498621" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2498621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" weight="0.32952183" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -145,7 +146,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -176,8 +177,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+        <state relative-caret-position="372">
+          <caret line="93" column="19" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="19" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
