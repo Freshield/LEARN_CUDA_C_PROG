@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="a5_review_sum_array_on_gpu" targetName="a5_review_sum_array_on_gpu" />
+      <config projectName="a6_matrix" targetName="a6_matrix" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,10 +11,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03461c5b-f890-4791-ad84-6fb4740f43e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cu" beforeDir="false" afterPath="$PROJECT_DIR$/main.cu" afterDir="false" />
+    <list default="true" id="86d0d33d-f242-41a2-8a6f-5f59316140e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../a5_review_sum_array_on_gpu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a5_review_sum_array_on_gpu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a5_review_sum_array_on_gpu/cmake-build-debug/CMakeFiles/a5_review_sum_array_on_gpu.dir/a5_review_sum_array_on_gpu_generated_main.cu.o" beforeDir="false" afterPath="$PROJECT_DIR$/../a5_review_sum_array_on_gpu/cmake-build-debug/CMakeFiles/a5_review_sum_array_on_gpu.dir/a5_review_sum_array_on_gpu_generated_main.cu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a5_review_sum_array_on_gpu/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../a5_review_sum_array_on_gpu/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a5_review_sum_array_on_gpu/cmake-build-debug/a5_review_sum_array_on_gpu" beforeDir="false" afterPath="$PROJECT_DIR$/../a5_review_sum_array_on_gpu/cmake-build-debug/a5_review_sum_array_on_gpu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a5_review_sum_array_on_gpu/main.cu" beforeDir="false" afterPath="$PROJECT_DIR$/../a5_review_sum_array_on_gpu/main.cu" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,12 +27,24 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="99" column="28" lean-forward="true" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+            <state relative-caret-position="326">
+              <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,23 +76,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="a5_review_sum_array_on_gpu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="a5_review_sum_array_on_gpu" type="462c0819:PsiDirectoryNode" />
+              <item name="a6_matrix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="a6_matrix" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../a5_review_sum_array_on_gpu" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -95,7 +109,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="a5_review_sum_array_on_gpu" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="a5_review_sum_array_on_gpu" TARGET_NAME="a5_review_sum_array_on_gpu" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="a5_review_sum_array_on_gpu" RUN_TARGET_NAME="a5_review_sum_array_on_gpu">
+    <configuration name="a6_matrix" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="a6_matrix" TARGET_NAME="a6_matrix" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="a6_matrix" RUN_TARGET_NAME="a6_matrix">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -106,71 +120,68 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="03461c5b-f890-4791-ad84-6fb4740f43e7" name="Default Changelist" comment="" />
-      <created>1550905737925</created>
+      <changelist id="86d0d33d-f242-41a2-8a6f-5f59316140e1" name="Default Changelist" comment="" />
+      <created>1551082425212</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1550905737925</updated>
-      <workItem from="1550905739182" duration="3424000" />
-      <workItem from="1551062518245" duration="37000" />
-      <workItem from="1551083316140" duration="50000" />
+      <updated>1551082425212</updated>
+      <workItem from="1551082426444" duration="2375000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3511000" />
+    <option name="totallyTimeSpent" value="2375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="511" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25537783" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="CMake" weight="0.32952183" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Messages" weight="0.32952183" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32952183" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4064449" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32952183" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.32917964" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../a4_sum_array_on_gpu/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/../a5_review_sum_array_on_gpu/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="9" lean-forward="true" selection-end-line="22" selection-end-column="39" />
+        <state>
+          <caret selection-end-line="19" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="374">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Linkingmed_HT/Codes_HT/Linkingmed/L47_C_driver/test/t1_try_python_use_c/add.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="99" column="28" lean-forward="true" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+        <state relative-caret-position="326">
+          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
