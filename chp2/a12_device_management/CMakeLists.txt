@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(a11_sumMatrix_mix)
+project(a12_device_management)
 
 # 设置CUDA版本
 set(CUDA_TOOLKIT_ROOT_DIR /usr/local/cuda-9.0)
@@ -14,4 +14,4 @@ include_directories(${CUDA_INCLUDE_DIRS})
 # nvprof --unified-memory-profiling off ./main
 
 # 添加可执行文件
-CUDA_ADD_EXECUTABLE(a11_sumMatrix_mix main.cu)
+CUDA_ADD_EXECUTABLE(a12_device_management main.cu)
