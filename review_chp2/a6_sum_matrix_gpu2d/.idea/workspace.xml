@@ -13,7 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="501ac553-b6b1-45c0-982b-a9d65af745e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../a4_sum_array_on_gpu_small_case/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a4_sum_array_on_gpu_small_case/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a5_check_threadidx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a5_check_threadidx/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="176">
+              <caret line="8" column="11" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="152" column="51" lean-forward="true" selection-start-line="152" selection-start-column="51" selection-end-line="152" selection-end-column="51" />
+            <state relative-caret-position="131">
+              <caret line="136" selection-end-line="186" selection-end-column="1" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -124,12 +124,12 @@
       <option name="presentableId" value="Default" />
       <updated>1552381922703</updated>
       <workItem from="1552381923842" duration="70000" />
-      <workItem from="1552382020576" duration="1084000" />
+      <workItem from="1552382020576" duration="2184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1154000" />
+    <option name="totallyTimeSpent" value="2254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="518" width="1855" height="1084" extended-state="6" />
@@ -163,15 +163,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="176">
+          <caret line="8" column="11" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="152" column="51" lean-forward="true" selection-start-line="152" selection-start-column="51" selection-end-line="152" selection-end-column="51" />
+        <state relative-caret-position="131">
+          <caret line="136" selection-end-line="186" selection-end-column="1" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
