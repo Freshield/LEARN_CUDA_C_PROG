@@ -124,6 +124,7 @@ __global__ void sumMatrixOnGPU1D(float *A, float *B, float *C, int nx, int ny){
     }
 }
 
+
 int main() {
 
     int dev = 0;

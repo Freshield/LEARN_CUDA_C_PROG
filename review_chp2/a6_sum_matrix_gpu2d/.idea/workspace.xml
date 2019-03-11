@@ -12,8 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="501ac553-b6b1-45c0-982b-a9d65af745e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../a4_sum_array_on_gpu_small_case/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a4_sum_array_on_gpu_small_case/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a7_sum_matrix_gpu1d/main.cu" beforeDir="false" afterPath="$PROJECT_DIR$/../a7_sum_matrix_gpu1d/main.cu" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -124,16 +123,15 @@
       <option name="presentableId" value="Default" />
       <updated>1552381922703</updated>
       <workItem from="1552381923842" duration="70000" />
-      <workItem from="1552382020576" duration="2184000" />
+      <workItem from="1552382020576" duration="2390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2254000" />
+    <option name="totallyTimeSpent" value="2460000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="518" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="546" width="1855" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -141,7 +139,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3294979" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3294979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
