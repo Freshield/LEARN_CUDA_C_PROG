@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/a6_sum_matrix_gpu2d.dir/a6_sum_matrix_gpu2d_generated_main.cu.o  -o a6_sum_matrix_gpu2d /usr/local/cuda-9.0/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 
