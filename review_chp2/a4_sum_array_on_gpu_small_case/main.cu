@@ -73,8 +73,8 @@ int main() {
     iElaps = cpuSecond() - iStart;
     printf("initData use %.6f\n", iElaps);
 
-    memset(hostRef, 0, nBytes);
-    memset(gpuRef, 0, nBytes);
+//    memset(hostRef, 0, nBytes);
+//    memset(gpuRef, 0, nBytes);
 
     float *d_A, *d_B, *d_C;
     cudaMalloc((float **)&d_A, nBytes);
