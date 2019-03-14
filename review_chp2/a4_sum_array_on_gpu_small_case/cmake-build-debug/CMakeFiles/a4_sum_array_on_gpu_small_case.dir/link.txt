@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/a4_sum_array_on_gpu_small_case.dir/a4_sum_array_on_gpu_small_case_generated_main.cu.o  -o a4_sum_array_on_gpu_small_case /usr/local/cuda-9.0/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 

@@ -1,0 +1,11 @@
+/home/freshield/software/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a1_cpu_sum_array
+-- The C compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a1_cpu_sum_array/cmake-build-debug

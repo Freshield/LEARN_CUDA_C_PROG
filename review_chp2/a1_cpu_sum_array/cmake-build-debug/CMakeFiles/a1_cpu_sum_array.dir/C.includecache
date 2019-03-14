@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a1_cpu_sum_array/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+time.h
+-
+

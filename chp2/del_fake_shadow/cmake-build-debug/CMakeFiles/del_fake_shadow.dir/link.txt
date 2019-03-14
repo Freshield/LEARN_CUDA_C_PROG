@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/del_fake_shadow.dir/del_fake_shadow_generated_main.cu.o  -o del_fake_shadow /usr/local/cuda-9.0/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 

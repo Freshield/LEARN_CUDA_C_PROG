@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="a11_sumMatrix_mix" targetName="a11_sumMatrix_mix" />
+      <config projectName="a2_check_dimension" targetName="a2_check_dimension" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,9 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83196e9c-cc0d-4831-be36-df22241b8c7e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a12_device_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a12_device_management/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="81eca8fb-df61-4f43-9d97-ae4f0d109957" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../chp2/a11_sumMatrix_mix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chp2/a11_sumMatrix_mix/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chp2/a12_device_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chp2/a12_device_management/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,19 +26,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/main.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="46" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="46" />
+            <state relative-caret-position="418">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cu">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="153" column="17" selection-start-line="153" selection-start-column="17" selection-end-line="153" selection-end-column="17" />
+            <state relative-caret-position="176">
+              <caret line="8" column="11" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -51,8 +51,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main.cu" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/main.cu" />
       </list>
     </option>
   </component>
@@ -74,8 +75,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="a11_sumMatrix_mix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="a11_sumMatrix_mix" type="462c0819:PsiDirectoryNode" />
+              <item name="a2_check_dimension" type="b2602c69:ProjectViewProjectNode" />
+              <item name="a2_check_dimension" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -103,7 +104,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="a11_sumMatrix_mix" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="a11_sumMatrix_mix" TARGET_NAME="a11_sumMatrix_mix" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="a11_sumMatrix_mix" RUN_TARGET_NAME="a11_sumMatrix_mix">
+    <configuration name="a2_check_dimension" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="a2_check_dimension" TARGET_NAME="a2_check_dimension" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="a2_check_dimension" RUN_TARGET_NAME="a2_check_dimension">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -114,30 +115,24 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="83196e9c-cc0d-4831-be36-df22241b8c7e" name="Default Changelist" comment="" />
-      <created>1551174436268</created>
+      <changelist id="81eca8fb-df61-4f43-9d97-ae4f0d109957" name="Default Changelist" comment="" />
+      <created>1552388899336</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1551174436268</updated>
-      <workItem from="1551174437457" duration="1653000" />
-      <workItem from="1551236130507" duration="430000" />
-      <workItem from="1551247140384" duration="843000" />
-      <workItem from="1551252759039" duration="2358000" />
-      <workItem from="1551255790237" duration="697000" />
-      <workItem from="1551319051589" duration="438000" />
-      <workItem from="1551336513769" duration="500000" />
-      <workItem from="1551352690914" duration="470000" />
+      <updated>1552388899336</updated>
+      <workItem from="1552388900484" duration="1150000" />
+      <workItem from="1552533541453" duration="1172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7389000" />
+    <option name="totallyTimeSpent" value="2322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="518" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25013834" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -149,10 +144,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3294979" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.26359832" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.32881" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -163,17 +158,17 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/main.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="46" />
+        <state relative-caret-position="418">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cu">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="153" column="17" selection-start-line="153" selection-start-column="17" selection-end-line="153" selection-end-column="17" />
+        <state relative-caret-position="176">
+          <caret line="8" column="11" selection-end-line="18" />
         </state>
       </provider>
     </entry>

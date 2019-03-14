@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/a3_define_grid_blok.dir/main.c.o  -o a3_define_grid_blok /usr/local/cuda-9.0/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 

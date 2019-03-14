@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/a1_cpu_sum_array.dir/main.c.o  -o a1_cpu_sum_array 
