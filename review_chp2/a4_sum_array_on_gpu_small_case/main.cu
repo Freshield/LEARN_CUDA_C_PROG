@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cuda_runtime.h>
 #include <time.h>
+#include <sys/time.h>
 
 void checkResult(float *hostRef, float *gpuRef, const int N){
     double epsilon = 1.0E-8;
@@ -35,9 +36,18 @@ void sumArraysOnHost(float *A, float *B, float *C, const int N){
     }
 }
 
-__global__ void sumArraysOnGPU(float *A, float *B, float *C){
-    int i = threadIdx.x;
-    C[i] = A[i] + B[i];
+__global__ void sumArraysOnGPU(float *A, float *B, float *C, const int N){
+    int i = blockIdx.x * blockDim.x + threadIdx.x;
+    if (i < N){
+        C[i] = A[i] + B[i];
+    }
+}
+
+double cpuSecond(){
+    struct timeval tp;
+    gettimeofday(&tp, NULL);
+
+    return ((double)tp.tv_sec + (double)tp.tv_usec*1.e-6);
 }
 
 int main() {
@@ -45,7 +55,7 @@ int main() {
     int dev = 0;
     cudaSetDevice(dev);
 
-    int nElem = 32;
+    int nElem = 1<<24;
     printf("Vector size %d\n", nElem);
 
     size_t nBytes = nElem * sizeof(float);
@@ -56,8 +66,12 @@ int main() {
     hostRef = (float *)malloc(nBytes);
     gpuRef = (float *)malloc(nBytes);
 
+    double iStart, iElaps;
+    iStart = cpuSecond();
     initialData(h_A, nElem);
     initialData(h_B, nElem);
+    iElaps = cpuSecond() - iStart;
+    printf("initData use %.6f\n", iElaps);
 
     memset(hostRef, 0, nBytes);
     memset(gpuRef, 0, nBytes);
@@ -70,15 +84,23 @@ int main() {
     cudaMemcpy(d_A, h_A, nBytes, cudaMemcpyHostToDevice);
     cudaMemcpy(d_B, h_B, nBytes, cudaMemcpyHostToDevice);
 
-    dim3 block(nElem);
-    dim3 grid(nElem/block.x);
+    int iLen = 256;
+    dim3 block(iLen);
+    dim3 grid((nElem+block.x-1)/block.x);
 
-    sumArraysOnGPU<<<grid, block>>>(d_A, d_B, d_C);
+    iStart = cpuSecond();
+    sumArraysOnGPU<<<grid, block>>>(d_A, d_B, d_C, nElem);
+    cudaDeviceSynchronize();
+    iElaps = cpuSecond() - iStart;
     printf("Execution configuration <<<%d, %d>>>\n", grid.x, block.x);
+    printf("GPU sum use %.6f\n", iElaps);
+
 
     cudaMemcpy(gpuRef, d_C, nBytes, cudaMemcpyDeviceToHost);
-
+    iStart = cpuSecond();
     sumArraysOnHost(h_A, h_B, hostRef, nElem);
+    iElaps = cpuSecond() - iStart;
+    printf("Host sum use %.3f\n", iElaps);
 
     checkResult(hostRef, gpuRef, nElem);
 

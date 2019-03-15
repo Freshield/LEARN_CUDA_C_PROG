@@ -60,6 +60,7 @@ SET(CUDA_NVCC_DEPEND
  "/usr/include/x86_64-linux-gnu/sys/cdefs.h"
  "/usr/include/x86_64-linux-gnu/sys/select.h"
  "/usr/include/x86_64-linux-gnu/sys/sysmacros.h"
+ "/usr/include/x86_64-linux-gnu/sys/time.h"
  "/usr/include/x86_64-linux-gnu/sys/types.h"
  "/usr/include/xlocale.h"
  "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h"
