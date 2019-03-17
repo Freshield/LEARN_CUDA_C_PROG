@@ -11,17 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f5a141d-6823-4f15-9fdc-74de464eb666" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../chp2/a12_device_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chp2/a12_device_management/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a7_sum_matrix_gpu1d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a7_sum_matrix_gpu1d/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a7_sum_matrix_gpu1d/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../a7_sum_matrix_gpu1d/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/cmake-build-debug/CMakeFiles/a8_sum_matrix_gpumix.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/cmake-build-debug/CMakeFiles/a8_sum_matrix_gpumix.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/main.cu" beforeDir="false" afterPath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/main.cu" afterDir="false" />
-    </list>
+    <list default="true" id="2f5a141d-6823-4f15-9fdc-74de464eb666" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1342">
-              <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+            <state relative-caret-position="44">
+              <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -128,16 +118,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552902148843</updated>
-      <workItem from="1552902150025" duration="801000" />
+      <workItem from="1552902150025" duration="841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="801000" />
+    <option name="totallyTimeSpent" value="841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="518" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
@@ -150,7 +139,7 @@
       <window_info anchor="bottom" id="CMake" weight="0.3294979" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3294979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -174,8 +163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1342">
-          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+        <state relative-caret-position="44">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
