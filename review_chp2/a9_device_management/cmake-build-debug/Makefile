@@ -48,10 +48,10 @@ RM = /home/freshield/software/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a8_sum_matrix_gpumix
+CMAKE_SOURCE_DIR = /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a9_device_management
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a8_sum_matrix_gpumix/cmake-build-debug
+CMAKE_BINARY_DIR = /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a9_device_management/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a8_sum_matrix_gpumix/cmake-build-debug/CMakeFiles /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a8_sum_matrix_gpumix/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a9_device_management/cmake-build-debug/CMakeFiles /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a9_device_management/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a8_sum_matrix_gpumix/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/review_chp2/a9_device_management/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named a8_sum_matrix_gpumix
+# Target rules for targets named a9_device_management
 
 # Build rule for target.
-a8_sum_matrix_gpumix: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 a8_sum_matrix_gpumix
-.PHONY : a8_sum_matrix_gpumix
+a9_device_management: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 a9_device_management
+.PHONY : a9_device_management
 
 # fast build rule for target.
-a8_sum_matrix_gpumix/fast:
-	$(MAKE) -f CMakeFiles/a8_sum_matrix_gpumix.dir/build.make CMakeFiles/a8_sum_matrix_gpumix.dir/build
-.PHONY : a8_sum_matrix_gpumix/fast
+a9_device_management/fast:
+	$(MAKE) -f CMakeFiles/a9_device_management.dir/build.make CMakeFiles/a9_device_management.dir/build
+.PHONY : a9_device_management/fast
 
 # Help Target
 help:
@@ -130,7 +130,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... a8_sum_matrix_gpumix"
+	@echo "... a9_device_management"
 	@echo "... edit_cache"
 .PHONY : help
 

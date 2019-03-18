@@ -124,6 +124,17 @@ __global__ void sumMatrixOnGPU1D(float *A, float *B, float *C, int nx, int ny){
     }
 }
 
+__global__ void sumMatrixOnGPUMix(float *A, float *B, float *C, int nx, int ny){
+    int ix = threadIdx.x + blockIdx.x * blockDim.x;
+    int iy = blockIdx.y;
+    int idx = ix + iy * nx;
+
+    if ((ix < nx) && (iy < ny)){
+        C[idx] = A[idx] + B[idx];
+    }
+
+}
+
 
 int main() {
 
@@ -151,11 +162,11 @@ int main() {
     cudaMalloc((void **)&d_B, nBytes);
     cudaMalloc((void **)&d_C, nBytes);
 
-    int dimx = 128;
+    int dimx = 256;
     int dimy = 1;
     dim3 block(dimx, dimy);
 //    dim3 grid((nx+block.x-1)/block.x, (ny+block.y-1)/block.y);
-    dim3 grid((nx+block.x-1)/block.x, 1);
+    dim3 grid((nx+block.x-1)/block.x, ny);
 
     double iStart, iElaps;
     iStart = cpuSecond();
@@ -171,7 +182,7 @@ int main() {
 
     iStart = cpuSecond();
 //    sumMatrixOnGPU2D<<<grid, block>>>(d_A, d_B, d_C, nx, ny);
-    sumMatrixOnGPU1D<<<grid, block>>>(d_A, d_B, d_C, nx, ny);
+    sumMatrixOnGPUMix<<<grid, block>>>(d_A, d_B, d_C, nx, ny);
     cudaDeviceSynchronize();
     iElaps = cpuSecond() - iStart;
     printf("Execution configuration <<<(%d,%d), (%d,%d)>>>\n", grid.x, grid.y, block.x, block.y);
