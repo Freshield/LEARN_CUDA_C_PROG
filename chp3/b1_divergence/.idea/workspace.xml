@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="a4_sum_array_on_gpu_small_case" targetName="a4_sum_array_on_gpu_small_case" />
+      <config projectName="b1_divergence" targetName="b1_divergence" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,10 +11,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2beec773-7d16-47be-be15-696e782847dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a8_sum_matrix_gpumix/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a9_device_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a9_device_management/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a9_device_management/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../a9_device_management/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+    <list default="true" id="97ee67ce-99bc-4903-af3f-3d3633a549c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../chp2/a11_sumMatrix_mix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chp2/a11_sumMatrix_mix/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../review_chp2/a4_sum_array_on_gpu_small_case/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../review_chp2/a4_sum_array_on_gpu_small_case/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../review_chp2/a8_sum_matrix_gpumix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../review_chp2/a8_sum_matrix_gpumix/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../review_chp2/a9_device_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../review_chp2/a9_device_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../review_chp2/a9_device_management/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../review_chp2/a9_device_management/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,12 +27,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="46" selection-end-line="18" />
+            <state relative-caret-position="352">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -38,8 +40,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1606">
-              <caret line="73" column="39" lean-forward="true" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
+            <state relative-caret-position="234">
+              <caret line="117" column="20" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,7 +58,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/main.cu" />
       </list>
     </option>
@@ -77,8 +81,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="a4_sum_array_on_gpu_small_case" type="b2602c69:ProjectViewProjectNode" />
-              <item name="a4_sum_array_on_gpu_small_case" type="462c0819:PsiDirectoryNode" />
+              <item name="b1_divergence" type="b2602c69:ProjectViewProjectNode" />
+              <item name="b1_divergence" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -88,7 +92,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../chp2/a11_sumMatrix_mix" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -105,7 +108,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="a4_sum_array_on_gpu_small_case" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="a4_sum_array_on_gpu_small_case" TARGET_NAME="a4_sum_array_on_gpu_small_case" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="a4_sum_array_on_gpu_small_case" RUN_TARGET_NAME="a4_sum_array_on_gpu_small_case">
+    <configuration name="b1_divergence" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="b1_divergence" TARGET_NAME="b1_divergence" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="b1_divergence" RUN_TARGET_NAME="b1_divergence">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -116,44 +119,42 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2beec773-7d16-47be-be15-696e782847dd" name="Default Changelist" comment="" />
-      <created>1552535589722</created>
+      <changelist id="97ee67ce-99bc-4903-af3f-3d3633a549c6" name="Default Changelist" comment="" />
+      <created>1552996882062</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1552535589722</updated>
-      <workItem from="1552535590934" duration="2436000" />
-      <workItem from="1552637093803" duration="2411000" />
-      <workItem from="1552382059904" duration="604000" />
-      <workItem from="1552967150940" duration="9000" />
+      <updated>1552996882062</updated>
+      <workItem from="1552996883441" duration="1655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5460000" />
+    <option name="totallyTimeSpent" value="1655000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="511" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="518" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2589928" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Messages" weight="0.3294979" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="CMake" weight="0.33943966" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3294979" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3294979" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.6140167" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" id="CMake" order="12" visible="true" weight="0.32845187" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,15 +163,18 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="46" selection-end-line="18" />
+        <state relative-caret-position="352">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="73" column="39" lean-forward="true" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
+        <state relative-caret-position="234">
+          <caret line="117" column="20" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

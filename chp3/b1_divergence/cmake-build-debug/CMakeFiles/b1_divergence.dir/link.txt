@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/b1_divergence.dir/b1_divergence_generated_main.cu.o  -o b1_divergence /usr/local/cuda-9.0/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 
