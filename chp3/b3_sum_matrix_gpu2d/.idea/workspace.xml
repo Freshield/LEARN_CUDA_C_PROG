@@ -11,12 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ddcf72a-912f-42fc-a207-fcb625b231d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../chp2/a7_sumMatrix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chp2/a7_sumMatrix/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../b1_divergence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../b1_divergence/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../b2_simple_query/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../b2_simple_query/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../b2_simple_query/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../b2_simple_query/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-    </list>
+    <list default="true" id="6ddcf72a-912f-42fc-a207-fcb625b231d7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,12 +117,12 @@
       <option name="presentableId" value="Default" />
       <updated>1553847851318</updated>
       <workItem from="1553847852492" duration="3754000" />
-      <workItem from="1553853286477" duration="244000" />
+      <workItem from="1553853286477" duration="277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3998000" />
+    <option name="totallyTimeSpent" value="4031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="518" width="1855" height="1084" extended-state="6" />
