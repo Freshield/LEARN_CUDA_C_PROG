@@ -1,4 +1,4 @@
-/home/freshield/software/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b2_simple_query
+/home/freshield/software/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b3_sum_matrix_gpu2d
 CMake Warning (dev) at CMakeLists.txt:8 (find_package):
   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
@@ -13,4 +13,4 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b2_simple_query/cmake-build-debug
+-- Build files have been written to: /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b3_sum_matrix_gpu2d/cmake-build-debug
