@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/b2_simple_query.dir/b2_simple_query_generated_main.cu.o  -o b2_simple_query /usr/local/cuda-9.0/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 

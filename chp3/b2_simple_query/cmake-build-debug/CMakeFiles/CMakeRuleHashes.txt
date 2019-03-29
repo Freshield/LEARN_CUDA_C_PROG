@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+df608a41934702776740e6c738b65167 CMakeFiles/b2_simple_query.dir/b2_simple_query_generated_main.cu.o
