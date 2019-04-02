@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/b4_reduce_integer.dir/main.c.o  -o b4_reduce_integer /usr/local/cuda-9.0/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 
+/usr/bin/c++  -g   CMakeFiles/b4_reduce_integer.dir/b4_reduce_integer_generated_main.cu.o  -o b4_reduce_integer /usr/local/cuda-9.0/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 

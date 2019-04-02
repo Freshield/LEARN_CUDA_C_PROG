@@ -48,10 +48,10 @@ RM = /home/freshield/software/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b4_reduce_integer
+CMAKE_SOURCE_DIR = /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b5_reduces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b4_reduce_integer/cmake-build-debug
+CMAKE_BINARY_DIR = /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b5_reduces/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b4_reduce_integer/cmake-build-debug/CMakeFiles /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b4_reduce_integer/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b5_reduces/cmake-build-debug/CMakeFiles /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b5_reduces/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b4_reduce_integer/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/freshield/SSD_1T/LEARN_CUDA_C_PROG/chp3/b5_reduces/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named b4_reduce_integer
+# Target rules for targets named b5_reduces
 
 # Build rule for target.
-b4_reduce_integer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 b4_reduce_integer
-.PHONY : b4_reduce_integer
+b5_reduces: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 b5_reduces
+.PHONY : b5_reduces
 
 # fast build rule for target.
-b4_reduce_integer/fast:
-	$(MAKE) -f CMakeFiles/b4_reduce_integer.dir/build.make CMakeFiles/b4_reduce_integer.dir/build
-.PHONY : b4_reduce_integer/fast
+b5_reduces/fast:
+	$(MAKE) -f CMakeFiles/b5_reduces.dir/build.make CMakeFiles/b5_reduces.dir/build
+.PHONY : b5_reduces/fast
+
+main.o: main.c.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	$(MAKE) -f CMakeFiles/b5_reduces.dir/build.make CMakeFiles/b5_reduces.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) -f CMakeFiles/b5_reduces.dir/build.make CMakeFiles/b5_reduces.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) -f CMakeFiles/b5_reduces.dir/build.make CMakeFiles/b5_reduces.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -130,8 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... b4_reduce_integer"
+	@echo "... b5_reduces"
 	@echo "... edit_cache"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

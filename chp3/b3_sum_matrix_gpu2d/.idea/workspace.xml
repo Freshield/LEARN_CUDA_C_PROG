@@ -11,7 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ddcf72a-912f-42fc-a207-fcb625b231d7" name="Default Changelist" comment="" />
+    <list default="true" id="6ddcf72a-912f-42fc-a207-fcb625b231d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b4_reduce_integer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../b4_reduce_integer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b4_reduce_integer/main.cu" beforeDir="false" afterPath="$PROJECT_DIR$/../b4_reduce_integer/main.cu" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            <state relative-caret-position="286">
+              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -118,16 +122,19 @@
       <updated>1553847851318</updated>
       <workItem from="1553847852492" duration="3754000" />
       <workItem from="1553853286477" duration="277000" />
+      <workItem from="1554085244168" duration="1235000" />
+      <workItem from="1554110554042" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4031000" />
+    <option name="totallyTimeSpent" value="5274000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="518" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="511" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13669065" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14001107" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -160,8 +167,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="286">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
