@@ -208,6 +208,115 @@ __global__ void reduceUnrollingWarps8(int *g_idata, int *g_odata, unsigned int n
     }
 }
 
+__global__ void reduceCompleteUnrollingWarps8(int *g_idata, int *g_odata, unsigned int n){
+    unsigned int tid = threadIdx.x;
+    unsigned int idx = blockIdx.x * blockDim.x * 8 + threadIdx.x;
+
+    int *idata = g_idata + blockIdx.x * blockDim.x * 8;
+
+    if (idx + 7 * blockDim.x < n){
+        int a1 = g_idata[idx];
+        int a2 = g_idata[idx + blockDim.x];
+        int a3 = g_idata[idx + 2 * blockDim.x];
+        int a4 = g_idata[idx + 3 * blockDim.x];
+        int a5 = g_idata[idx + 4 * blockDim.x];
+        int a6 = g_idata[idx + 5 * blockDim.x];
+        int a7 = g_idata[idx + 6 * blockDim.x];
+        int a8 = g_idata[idx + 7 * blockDim.x];
+        g_idata[idx] = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8;
+    }
+    __syncthreads();
+
+    if (blockDim.x >= 1024 && tid < 512){
+        idata[tid] += idata[tid + 512];
+    }
+    __syncthreads();
+
+    if (blockDim.x >= 512 && tid < 256){
+        idata[tid] += idata[tid + 256];
+    }
+    __syncthreads();
+
+    if (blockDim.x >= 256 && tid < 128){
+        idata[tid] += idata[tid + 128];
+    }
+    __syncthreads();
+
+    if (blockDim.x >= 128 && tid < 64){
+        idata[tid] += idata[tid + 64];
+    }
+    __syncthreads();
+
+    if(tid < 32){
+        volatile int *vmem = idata;
+        vmem[tid] += vmem[tid + 32];
+        vmem[tid] += vmem[tid + 16];
+        vmem[tid] += vmem[tid + 8];
+        vmem[tid] += vmem[tid + 4];
+        vmem[tid] += vmem[tid + 2];
+        vmem[tid] += vmem[tid + 1];
+    }
+
+    if (tid == 0){
+        g_odata[blockIdx.x] = idata[0];
+    }
+}
+
+template <unsigned int iBlockSize>
+__global__ void reduceCompleteUnroll(int *g_idata, int *g_odata, unsigned int n){
+    unsigned int tid = threadIdx.x;
+    unsigned int idx = blockIdx.x * blockDim.x * 8 + threadIdx.x;
+
+    int *idata = g_idata + blockIdx.x * blockDim.x * 8;
+
+    if (idx + 7 * blockDim.x < n){
+        int a1 = g_idata[idx];
+        int a2 = g_idata[idx + blockDim.x];
+        int a3 = g_idata[idx + 2 * blockDim.x];
+        int a4 = g_idata[idx + 3 * blockDim.x];
+        int a5 = g_idata[idx + 4 * blockDim.x];
+        int a6 = g_idata[idx + 5 * blockDim.x];
+        int a7 = g_idata[idx + 6 * blockDim.x];
+        int a8 = g_idata[idx + 7 * blockDim.x];
+        g_idata[idx] = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8;
+    }
+    __syncthreads();
+
+    if (iBlockSize >= 1024 && tid < 512){
+        idata[tid] += idata[tid + 512];
+    }
+    __syncthreads();
+
+    if (iBlockSize >= 512 && tid < 256){
+        idata[tid] += idata[tid + 256];
+    }
+    __syncthreads();
+
+    if (iBlockSize >= 256 && tid < 128){
+        idata[tid] += idata[tid + 128];
+    }
+    __syncthreads();
+
+    if (iBlockSize >= 128 && tid < 64){
+        idata[tid] += idata[tid + 64];
+    }
+    __syncthreads();
+
+    if(tid < 32){
+        volatile int *vmem = idata;
+        vmem[tid] += vmem[tid + 32];
+        vmem[tid] += vmem[tid + 16];
+        vmem[tid] += vmem[tid + 8];
+        vmem[tid] += vmem[tid + 4];
+        vmem[tid] += vmem[tid + 2];
+        vmem[tid] += vmem[tid + 1];
+    }
+
+    if (tid == 0){
+        g_odata[blockIdx.x] = idata[0];
+    }
+}
+
 int main(int argc, char **argv) {
     int dev = 0;
     struct cudaDeviceProp iProp;
@@ -229,7 +338,7 @@ int main(int argc, char **argv) {
 
     dim3 block(blocksize, 1);
     dim3 grid((size + block.x -1) / block.x, 1);
-    printf(" grid %d block%d\n", grid.x, block.x);
+    printf(" grid %d block %d\n", grid.x, block.x);
 
     size_t bytes = size * sizeof(int);
     int *h_idata = (int *)malloc(bytes);
@@ -342,6 +451,48 @@ int main(int argc, char **argv) {
         gpu_sum += h_odata[i];
     }
     printf("gpu unrolling wraps 8 elapsed %f sec gpu_sum: %d <<<grid %d block %d>>>\n", iElaps, gpu_sum, grid.x/8, block.x);
+    //gpu kernel 8
+    cudaMemcpy(d_idata, h_idata, bytes, cudaMemcpyHostToDevice);
+    cudaDeviceSynchronize();
+    iStart = seconds();
+    reduceCompleteUnrollingWarps8<<<grid.x/8, block>>>(d_idata, d_odata, size);
+    cudaDeviceSynchronize();
+    iElaps = seconds() - iStart;
+    cudaMemcpy(h_odata, d_odata, grid.x/8 * sizeof(int), cudaMemcpyDeviceToHost);
+    gpu_sum = 0;
+    for (int i = 0; i < grid.x/8; ++i) {
+        gpu_sum += h_odata[i];
+    }
+    printf("gpu unrolling complete wraps 8 elapsed %f sec gpu_sum: %d <<<grid %d block %d>>>\n", iElaps, gpu_sum, grid.x/8, block.x);
+    //gpu kernel 9
+    cudaMemcpy(d_idata, h_idata, bytes, cudaMemcpyHostToDevice);
+    cudaDeviceSynchronize();
+    iStart = seconds();
+    switch (blocksize){
+        case 1024:
+            reduceCompleteUnroll<1024><<<grid.x/8, block.x>>>(d_idata, d_odata, size);
+            break;
+        case 512:
+            reduceCompleteUnroll<512><<<grid.x/8, block.x>>>(d_idata, d_odata, size);
+            break;
+        case 256:
+            reduceCompleteUnroll<256><<<grid.x/8, block.x>>>(d_idata, d_odata, size);
+            break;
+        case 128:
+            reduceCompleteUnroll<128><<<grid.x/8, block.x>>>(d_idata, d_odata, size);
+            break;
+        case 64:
+            reduceCompleteUnroll<64><<<grid.x/8, block.x>>>(d_idata, d_odata, size);
+            break;
+    }
+    cudaDeviceSynchronize();
+    iElaps = seconds() - iStart;
+    cudaMemcpy(h_odata, d_odata, grid.x/8 * sizeof(int), cudaMemcpyDeviceToHost);
+    gpu_sum = 0;
+    for (int i = 0; i < grid.x/8; ++i) {
+        gpu_sum += h_odata[i];
+    }
+    printf("gpu unrolling complete wraps 8 elapsed %f sec gpu_sum: %d <<<grid %d block %d>>>\n", iElaps, gpu_sum, grid.x/8, block.x);
 
     free(h_idata);
     free(h_odata);
