@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/b5_reduces.dir/main.c.o  -o b5_reduces /usr/local/cuda-9.0/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 
+/usr/bin/c++  -g   CMakeFiles/b5_reduces.dir/b5_reduces_generated_main.cu.o  -o b5_reduces /usr/local/cuda-9.0/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 
